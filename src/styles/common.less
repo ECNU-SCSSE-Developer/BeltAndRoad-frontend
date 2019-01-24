@@ -1,0 +1,55 @@
+@primary-font: 32px;
+@gray:#f8f8f9;
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.bg-translucence {
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.title {
+  &:extend(.fs-24);
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-spaceBetween-container{
+  &:extend(.flex-center);
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.horizontal-spaceAround-container{
+  &:extend(.flex-center);
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.horizontal-center-container{
+  &:extend(.flex-center);
+  flex-direction: row;
+  justify-content: center;
+}
+
+.margin-tb-12{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.hidden{
+  display: none;
+}
