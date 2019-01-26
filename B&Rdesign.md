@@ -21,7 +21,7 @@
 
 - 地球demo
 
-  <img src="https://mybucket1-1258582997.cos.ap-guangzhou.myqcloud.com/earth_demo.png"  style="width:100%; height:auto;">
+  <img src="https://mybucket1-1258582997.cos.ap-guangzhou.myqcloud.com/earth_demo.png"  style="width:720px; height:360;">
 
 
 
