@@ -24,7 +24,7 @@
 
   
 
-<img src="https://mybucket1-1258582997.cos.ap-guangzhou.myqcloud.com/earth_demo.png" >
+![earthdemo] (img src="https://mybucket1-1258582997.cos.ap-guangzhou.myqcloud.com/earth_demo.png")
 
 
 
