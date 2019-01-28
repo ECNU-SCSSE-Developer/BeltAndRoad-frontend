@@ -25,6 +25,7 @@
   
 
 ![earthdemo](https://mybucket1-1258582997.cos.ap-guangzhou.myqcloud.com/earth_demo.png)
+![test](https://mybucket1-1258582997.cos.ap-guangzhou.myqcloud.com/smile.jpg)
 
 
 
