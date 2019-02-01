@@ -6,10 +6,9 @@
 
   
 
-
 ### 首页设计
 
-#####   空间线展示
+##### 空间线展示
 
 - 详细设计
 
@@ -23,16 +22,15 @@
 
   <center>空间展示</center>
 
-  ![spaceshow](spaceshow.png)
-
+  ![spaceshow](https://mybucket1-1258582997.cos.ap-guangzhou.myqcloud.com/spaceshow.png)
 
 <center>代表点设置</center>
 
-![flag](flag.png)
+  ![flag](https://mybucket1-1258582997.cos.ap-guangzhou.myqcloud.com/flag.png)
 
 
 
-#####   时间线展示
+##### 时间线展示
 
 - 详细设计
   - **两级时间层**选择：第一级为选择**时间段**，地图标识出相应事件点；第二级为时间轴，更新显示该时间段内具体时间点，选择**时间点**，地球转到对应事件地点。
@@ -44,6 +42,10 @@
 ### 下周任务（2/1-2/8）
 
 - 搜集并整理一带一路教育信息数据
+
+- 初步完成时间线
+
+- 界面格局配色等调整
 
   
 
