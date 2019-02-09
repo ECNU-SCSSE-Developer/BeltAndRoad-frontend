@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ECharts-X">
     <meta name="author" content="shenyi.914@gmail.com">
-    <title>Map3D Mix Map - Powered by ECharts-X</title>
+    <title>一带一路</title>
 
     <link rel="shortcut icon" href="img/favicon.png">
 
@@ -93,6 +93,9 @@ myChart.setOption({
         name: 'Globe',
         type: 'map3d',
         mapType: 'world',
+        baseLayer: {
+        	backgroundColor: '#2b66b2'
+        },
         data: [{
             name: 'China',
             selected: true
@@ -109,27 +112,27 @@ myChart.setOption({
             preserve: false
         },
         markPoint: {
-            symbol: 'image://./asset/pin.png',
-            symbolSize: 8,
+            symbol: 'image://./asset/star.png',
+            symbolSize: 2,
             distance: 0,
             // orientation: 'normal',
-            orientationAngle: 45,
+            orientationAngle: 90,
             itemStyle: {
                 normal: {
                     label: {
-                        show: false,
+                        show:false,
                         formatter: '{b}',
                         // position: 'right',
                         textStyle: {
                             fontSize: 24,
                             color: 'white'
                         }
-                    }
+                    },
                 }
             },
             data: [{
-                name: '2018年1-12月“一带一路”沿线国家对华投资增长13.2%',
-                geoCoord: [-72.544963, -13.163141]
+                name: '埃及,是世界四大文明古国之一，也是世界上最早的王国，他们建造了闻名世界的金字塔和帝王谷。',
+                geoCoord: [30, 31]
             }, {
                 name: '#2 Angkor Wat, Siem Reap, Cambodia',
                 geoCoord: [103.866986, 13.412469]
@@ -148,7 +151,7 @@ myChart.setOption({
                 borderColor:'rgba(100,149,237,1)',
                 borderWidth:1.5,
                 areaStyle:{
-                    color: '#1b1b1b'
+                    color: '#2b66b2'
                 }
             }
         },
