@@ -60,7 +60,7 @@ $.ajax({
                 itemStyle: {
                     normal: {
                         areaStyle: {
-                            color: '#396696' 
+                            color: '#396696'
                         }
                     }
                 },
@@ -97,7 +97,7 @@ $.ajax({
                         data: data.data[param.name]
                     }]
                 });
-            } 
+            }
         });
     }
 });

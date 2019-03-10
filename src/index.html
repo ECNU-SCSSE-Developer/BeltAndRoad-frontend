@@ -15,37 +15,133 @@
     <link rel="stylesheet" href="../css/codemirror.css">
     <link rel="stylesheet" href="../css/monokai.css">
     <link rel="stylesheet" href="../css/twilight.css">
-    <body>
-        <header id="header">
-            <h1><a href="../index.html">ECharts-X</a></h1>
-            <div id="toolbar">
-                <button id="open-editor">Code Editor</button>
-            </div>
-            <ul class="links">
-                <li>
-                    <a href="../cn/article/getting_started.html" target="_blank">Documentation</a>
-                </li>
-                <li><a href="../example.html" class="active" target="_blank">Examples</a></li>
-                <li><a href="https://github.com/ecomfe/echarts-x/" target="_blank">Github</a></li>
-                <li><a href="http://echarts.baidu.com/" target="_blank">ECharts</a></li>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+
+    <link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Resource style -->
+
+
+    <style type="text/css">
+        body{
+            overflow-y:hidden;
+            overflow-x:hidden;
+        }
+
+        .intro
+        {
+            position:relative;
+            z-index: 999;
+            padding-top: 10px;
+            padding-left: 10px;"
+        }
+        .intro li{
+            line-height: 25px;
+        }
+    </style>
+<body style="background-image: url(../img/background1.jpg);background-size: 100% 100%;">
+<header id="header">
+    <h1><a href="index.html">一带一路·看世界</a></h1>
+    <div id="toolbar">
+        <button><a href="http://www.yidaiyilu.gov.cn/info/iList.jsp?tm_id=513">数据展示</a></button>
+    </div>
+    <ul class="links">
+        <li>
+            <a href="" target="_blank">热点讨论</a>
+        </li>
+        <li><a href="" class="active" target="_blank">国际合作</a></li>
+        <li><a href="" target="_blank">最新抢看</a></li>
+    </ul>
+</header>
+<main id="main">
+    <div id="chart"></div>
+</main>
+
+<div id="editor">
+    <textarea></textarea>
+    <!--<div id="editor-toolbar">-->
+        <!--<button id="editor-update">Update</button>-->
+        <!--<button id="editor-refresh">Refresh All</button>-->
+        <!--<button id="editor-close">Close</button>-->
+    <!--</div>-->
+</div>
+
+
+
+<section class="cd-horizontal-timeline">
+    <div class="timeline">
+        <div class="events-wrapper">
+            <div class="events">
+                <ol id="content">
+
+
+                </ol>
+
+                <span class="filling-line" aria-hidden="true"></span>
+            </div> <!-- .events -->
+        </div> <!-- .events-wrapper -->
+
+        <ul class="cd-timeline-navigation">
+            <li><a href="#0" class="prev inactive">Prev</a></li>
+            <li><a href="#0" class="next">Next</a></li>
+        </ul> <!-- .cd-timeline-navigation -->
+    </div> <!-- .timeline -->
+
+
+</section>
+
+<div id="event">
+<div style="margin-left: 55%; margin-top: -100px; width: 38%;" id="countryevent">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#China" aria-controls="home" role="tab" data-toggle="tab">China</a></li>
+        <li role="presentation"><a href="#Egypt" aria-controls="profile" role="tab" data-toggle="tab">Egypt</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content intro">
+        <div role="tabpanel" class="tab-pane active" id="China">
+
+            <ul>
+
+                <li>中国是四大文明古国之一 ，有着悠久的历史文化，是世界国土面积第三大的国家 ，世界第一大人口国，
+                    联合国安理会五大常任理事国之一，世界第二大经济体 ，世界第一贸易大国，世界第一大外汇储备国 ，
+                    世界第一大钢铁生产国和世界第一大农业国 ，也是世界第一大粮食总产量国以及世界上经济成长最快的
+                    国家之一 。第二大吸引外资国 ，还是世界许多国际组织的重要成员，被认为是潜在超级大国之一。</li>
+                <br>
+                <li><a href="">财政部：地方政府专项债券将支持“一带一路”建设</a></li>
+                <li><a href="">政府工作报告在海外引发热议：开放中国普惠世界</a></li>
+                <li><a href="">中国第21批援外医疗队救治逾五万马达加斯加人</a></li>
+                <li><a href="">进口澳大利亚铁矿石首次经铁海联运入境中国</a></li>
             </ul>
-        </header>
-        <main id="main">
-            <div id="chart"></div>
-        </main>
-        <div id="editor">
-            <textarea></textarea>
-            <div id="editor-toolbar">
-                <button id="editor-update">Update</button>
-                <button id="editor-refresh">Refresh All</button>
-                <button id="editor-close">Close</button>
-            </div>
+
         </div>
+        <div role="tabpanel" class="tab-pane" id="Egypt">
+            <ul>
+
+                <li>阿拉伯埃及共和国（The Arab Republic of Egypt），简称“埃及”。位于非洲东北部，地处欧亚非三大洲的交通要冲，是大西洋与印度洋之间海上航线的捷径。埃及是中东人口最多的国家和非洲人口第二大国，在经济、科技领域方面长期处于非洲领先态势。也是非洲大陆第三大经济体。
+                    古埃及是世界四大文明古国之一，也是世界上最早的王国，他们建造了闻名世界的金字塔和帝王谷。现在埃及的主体民族阿拉伯人并不是古埃及人，文化也完全不同。</li>
+                <br>
+                <li><a href="http://baidu.com">埃及贸工部长：埃及将从“一带一路”建设中受益</a></li>
+                <li><a href="http://baidu.com">埃及政府与中企就开罗轻轨项目达成初步共识</a></li>
+                <li><a href="http://baidu.com">埃及经济复苏 “一带一路”助推中埃产能合作</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+<script src="js2/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="js2/jquery.mobile.custom.min.js"></script>
+
 
 <script type="text/x-javascript" id="code-source">
 var ecConfig = require('echarts/config');
 var mapParams = require('echarts/util/mapData/params').params;
-
 mapParams.world.getGeoJson(function (data) {
     data.features.forEach(function (feature) {
         // Register regions
@@ -59,7 +155,6 @@ mapParams.world.getGeoJson(function (data) {
         }
     })
 });
-
 mapParams.usa = {
     getGeoJson: function (callback) {
         $.ajax({
@@ -70,7 +165,6 @@ mapParams.usa = {
         });
     }
 };
-
 myChart.setOption({
     title: {
         text: 'OBOR',
@@ -94,20 +188,29 @@ myChart.setOption({
         type: 'map3d',
         mapType: 'world',
         baseLayer: {
-        	backgroundColor: '#2b66b2'
+        	backgroundColor: '#9795cf'
         },
         data: [{
             name: 'China',
             selected: true
         }],
+
+        itemStyle:{
+            normal:{
+                areaStyle:{
+                    color: '#64638f'
+                }
+            }
+        },
+
         mapLocation: {
-            x: 0,
-            y: 0,
+            x: 'left',
+            y: 'top',
             width: '50%',
-            height: '100%'
+            height: '80%'
         },
         roam: {
-            autoRotate: false,
+            autoRotate: true,
             focus: 'China',
             preserve: false
         },
@@ -131,39 +234,18 @@ myChart.setOption({
                 }
             },
             data: [{
-                name: '埃及,是世界四大文明古国之一，也是世界上最早的王国，他们建造了闻名世界的金字塔和帝王谷。',
+                name: '事件总数：81',
                 geoCoord: [30, 31]
             }, {
-                name: '#2 Angkor Wat, Siem Reap, Cambodia',
+                name: '事件总数：92',
                 geoCoord: [103.866986, 13.412469]
             }, {
-                name: '#3 Taj Mahal, Agra, India',
+                name: '事件总数：76',
                 geoCoord: [78.042155, 27.175015]
             }]
         }
-    }, {
-        name: 'Map',
-        type: 'map',
-        mapType: 'china',
-        data: [{}],
-        itemStyle:{
-            normal:{
-                borderColor:'rgba(100,149,237,1)',
-                borderWidth:1.5,
-                areaStyle:{
-                    color: '#2b66b2'
-                }
-            }
-        },
-        mapLocation: {
-            x: '50%',
-            y: 0,
-            width: '50%',
-            height: '100%'
-        },
     }],
 });
-
 myChart.on(ecConfig.EVENT.CLICK, function (param) {
     var name = param.name;
     var dataOpt = [{
@@ -216,19 +298,279 @@ myChart.on(ecConfig.EVENT.CLICK, function (param) {
         })
     }
 });
+
+//点击时间轴
+myChart1=myChart;
+function countrybling(countryname){
+    myChart1.setOption({
+        series: getData()
+         <!--series:[{-->
+            <!--data: getData(),-->
+
+             <!--data:[{-->
+                 <!--name:countryname,-->
+                 <!--selected:true-->
+             <!--}],-->
+             <!--roam: {-->
+                <!--autoRotate: true,-->
+                <!--focus: countryname,-->
+                <!--preserve: false-->
+             <!--}-->
+         <!--}]-->
+    });
+}
 </script>
 
-        <script src="../lib/esl.js"></script>
-        <script src="../lib/jquery.min.js"></script>
-        <script src="js/bootExample.js"></script>
+<script src="../lib/esl.js"></script>
+<script src="../lib/jquery.min.js"></script>
+<script src="js/bootExample.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/npm.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    if (document.location.href.indexOf('local') == -1) {
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb78830c9a5dad062d08b90b2bc0cf5da' type='text/javascript'%3E%3C/script%3E"));
+    };
 
-        <script>
-        if (document.location.href.indexOf('local') == -1) {
-            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb78830c9a5dad062d08b90b2bc0cf5da' type='text/javascript'%3E%3C/script%3E"));   
+    $(document).ready(function(){
+        getDate();
+
+    });
+
+    function getDate(){
+        var eventdate={
+            "eventDate":[
+                {
+                    "date0": "16/01/2014",
+                    "date": "16 Jan",
+                    "country": "Iran",
+                    "intro": "11111",
+                    "event": "11111111111"
+                },
+                {
+                    "date0": "28/02/2014",
+                    "date": "28 Feb",
+                    "country": "China",
+                    "intro": "22222222",
+                    "event": "22222222222"
+                },
+                {
+                    "date0": "20/04/2014",
+                    "date": "20 Mar",
+                    "country": "United States of America",
+                    "intro": "3333",
+                    "event": "3333333333"
+                },
+                {
+                    "date0": "20/05/2014",
+                    "date": "20 May",
+                    "country": "United States of America",
+                    "intro": "444444",
+                    "event": "44444444"
+                },
+                {
+                    "date0": "09/07/2014",
+                    "date": "09 Jul",
+                    "country": "United States of America",
+                    "intro": "5555",
+                    "event": "55555555"
+                },
+                {
+                    "date0": "30/08/2014",
+                    "date": "30 Aug",
+                    "country": "United States of America",
+                    "intro": "666",
+                    "event": "6666666"
+                },
+                {
+                    "date0": "15/09/2014",
+                    "date": "15 Sep",
+                    "country": "United States of America",
+                    "intro": "7",
+                    "event": "7"
+                },
+                {
+                    "date0": "01/11/2014",
+                    "date": "01 Nov",
+                    "country": "United States of America",
+                    "intro": "8",
+                    "event": "8"
+                },
+                {
+                    "date0": "10/12/2014",
+                    "date": "10 Dec",
+                    "country": "United States of America",
+                    "intro": "8",
+                    "event": "8"
+                },
+                {
+                    "date0": "19/01/2015",
+                    "date": "29 Jan",
+                    "country": "United States of America",
+                    "intro": "8",
+                    "event": "8"
+                },
+                {
+                    "date0": "03/03/2015",
+                    "date": "3 Mar",
+                    "country": "United States of America",
+                    "intro": "8",
+                    "event": "8"
+                }
+            ]
+        };
+
+
+
+        // 动态加载时间轴OK
+        var content=$("#content");
+        var html="";
+        for(var i=0;i<eventdate.eventDate.length;++i) {
+            if (i == 0) {
+                html += '<li onclick="countrybling()"><a href="#0" data-date="' + eventdate.eventDate[i].date0 + '" class="selected">' + eventdate.eventDate[i].date + '</a></li>';
+
+            } else {
+                html += '<li onclick="countrybling()"><a href="#0" data-date="' + eventdate.eventDate[i].date0 + '">' + eventdate.eventDate[i].date + '</a></li>';
+
+            }
         }
-        </script>
+        content.append(html);
+    };
 
-    </body>
+    function getData() {
+
+        var event={
+            "countryevent":[
+                {
+                    countryname:"China",
+                    introduction:"中国是四大文明古国之一 ，有着悠久的历史文化，是世界国" +
+                        "土面积第三大的国家 ，世界第一大人口国，与英、法、美、俄并" +
+                        "为联合国安理会五大常任理事国。中国是世界第二大经济体 ，世界" +
+                        "第一贸易大国，世界第一大外汇储备国 ，世界第一大钢铁生产国和世界" +
+                        "第一大农业国 ，世界第一大粮食总产量国以及世界上经济成长最快的国" +
+                        "家之一 。第二大吸引外资国 ，还是世界许多国际组织的重要成员" +
+                        "  ，被认为是潜在超级大国之一。",
+                    event:["习近平同埃及总统会谈：愿将“一带一路”同埃及“2030愿景”等战略对接","习近平会见伊朗总统鲁哈尼"]
+
+                },
+                {
+                    countryname:"Iran",
+                    introduction:"伊朗伊斯兰共和国（Islamic Republic of Iran），简称伊朗。" +
+                        "位于西亚，属中东国家。伊朗是亚洲主要经济体之一，经济实力较强。伊朗经济以石油" +
+                        "开采业为主，为世界石油天然气大国，地处世界石油天然气最丰富的中东地区，石油出口" +
+                        "是经济命脉，石油生产能力和石油出口量分别位于世界第四位和第二位，是石油输出国组织成员。\n" +
+                        "伊朗是文明古国。公元前550年，建立了世界历史上第一个领土横跨欧亚非三大洲的帝国—波斯帝国。" +
+                        "1979年成立共和国。实行政教合一制度。\n",
+                    event:["“一带一路”引发伊朗兴趣 中石油将扩大与伊朗油气合作","中石油伊朗项目获伊业界安全生产表彰 "]
+
+                },
+                {
+                    countryname:"Egypt",
+                    introduction:"阿拉伯埃及共和国（The Arab Republic of Egypt），简称“埃及”。位于非洲东北部，" +
+                        "地处欧亚非三大洲的交通要冲，是大西洋与印度洋之间海上航线的捷径。埃及是中东人口最多的国家和非洲人" +
+                        "口第二大国，在经济、科技领域方面长期处于非洲领先态势。也是非洲大陆第三大经济体\n"+
+                        " 古埃及是世界四大文明古国之一，也是世界上最早的王国，他们建造了闻名世界的金字塔和帝王谷。" +
+                        "现在埃及的主体民族阿拉伯人并不是古埃及人，文化也完全不同。\n",
+                    event:["埃及贸工部长：埃及将从“一带一路”建设中受益" ,"埃及政府与中企就开罗轻轨项目达成初步共识"]
+
+                }
+
+            ]
+        };
+
+        // 提取国家传给blingcountry
+        var size=event.countryevent.length;
+
+        var countryname=[];
+        for(var i=0;i<size;++i){
+            var single_country = {
+                name:'',
+                selected:true
+            };
+            single_country.name = event.countryevent[i].countryname;
+            countryname.push(single_country);
+
+        }
+
+        var series=[{
+            data: countryname,
+            roam: {
+                autoRotate: true,
+                focus: event.countryevent[1].countryname,
+                preserve: false
+            }
+        }];
+
+        // console.log(event.countryevent[0].countryname);
+        // 国家简介及事件显示
+        //清空OK
+        var events=document.getElementById("event");
+        events.innerHTML = "";
+
+
+        var html="";
+
+        //国家导航栏
+        html += '<div style="margin-left: 55%; margin-top: -100px; width: 38%;" id="countryevent">\n' +
+            '    <ul class="nav nav-tabs" role="tablist">';
+        for(var i=0;i<size;++i){
+            if(i==0){
+               html += '<li role="presentation" class="active"><a href="#'+ event.countryevent[i].countryname + '" aria-controls="home" role="tab" data-toggle="tab">'+ event.countryevent[i].countryname +'</a></li>';
+            }
+            else{
+                html += '<li role="presentation"><a href="#'+ event.countryevent[i].countryname + '" aria-controls="home" role="tab" data-toggle="tab">'+ event.countryevent[i].countryname +'</a></li>';
+
+            }
+        }
+        html += '</ul>'+'<div class="tab-content intro">';
+
+
+        for(var i=0;i<size;++i){
+            //简介
+            if(i==0){
+                html+=
+                    '        <div role="tabpanel" class="tab-pane active" id="'+ event.countryevent[i].countryname + '">' +
+                    '            <ul>' +
+                    '                <li>' + event.countryevent[i].introduction + '</li>' + '<br>';
+            }
+            else{
+                html+=
+                    '        <div role="tabpanel" class="tab-pane" id="'+ event.countryevent[i].countryname + '">' +
+                    '            <ul>' +
+                    '                <li>' + event.countryevent[i].introduction + '</li>' + '<br>';
+            }
+
+
+            //事件
+            var eventSize=event.countryevent[i].event.length;
+            for(var j=0;j<eventSize;++j){
+                html += '<li><a href="http://baidu.com">'+ event.countryevent[i].event[j] +'</a></li>'
+            }
+            html += '</ul>' + '</div>';
+
+        }
+
+        html +=  '    </div>' + '</div>';
+
+
+
+        var events=$("#event");
+        events.append(html);
+
+
+        return series;
+    }
+
+
+
+
+    function eventShow(countryevent){
+
+    }
+</script>
+<script src="js2/main.js"></script>
+
+</body>
 </head>
 </html>

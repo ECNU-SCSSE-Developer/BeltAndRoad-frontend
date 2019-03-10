@@ -38,18 +38,18 @@ define(function (require) {
         runCode(editor.doc.getValue());
     }
 
-    $('#open-editor').click(function () {
-        $('#editor').show();
-        // Force editor to show
-        editor.refresh();
-    });
+    // $('#open-editor').click(function () {
+    //     $('#editor').show();
+    //     // Force editor to show
+    //     editor.refresh();
+    // });
 
-    $('#editor-close').click(function () {
-        $('#editor').hide();
-    });
+    // $('#editor-close').click(function () {
+    //     $('#editor').hide();
+    // });
 
-    $('#editor-refresh').click(refresh);
-    $('#editor-update').click(update);
+    // $('#editor-refresh').click(refresh);
+    // $('#editor-update').click(update);
 
     setTimeout(function () {
         refresh();

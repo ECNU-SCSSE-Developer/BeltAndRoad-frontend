@@ -10,7 +10,7 @@ header {
   height: 50px;
   text-align: left;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  background-color: #3f4657;
+  background-color: #69779b;
   margin-bottom: 0;
   z-index: 100;
 }
@@ -22,12 +22,12 @@ header h1 a {
   font-size: 22px;
   color: #82becd;
   padding-left: 50px;
-  background-image: url(../img/echarts-logo.png);
+  background-image: url(../img/logo2.png);
   background-repeat: no-repeat;
   line-height: 35px;
   display: inline-block;
   text-decoration: none;
-  text-shadow: #393f4e 1px 1px, #393f4e 2px 2px, #393f4e 3px 3px, #393f4e 4px 4px, #393f4e 5px 5px, #393f4e 6px 6px, #393f4f 7px 7px, #3a4050 8px 8px, #3b4151 9px 9px, #3b4252 10px 10px, #3c4253 11px 11px, #3d4354 12px 12px, #3d4455 13px 13px;
+  /*text-shadow: #393f4e 1px 1px, #393f4e 2px 2px, #393f4e 3px 3px, #393f4e 4px 4px, #393f4e 5px 5px, #393f4e 6px 6px, #393f4f 7px 7px, #3a4050 8px 8px, #3b4151 9px 9px, #3b4252 10px 10px, #3c4253 11px 11px, #3d4354 12px 12px, #3d4455 13px 13px;*/
 }
 header .links {
   float: right;

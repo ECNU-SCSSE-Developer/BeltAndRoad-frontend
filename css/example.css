@@ -41,13 +41,13 @@ body {
 
 #main {
     position: absolute;
-    top: 50px;
+    top: 20px;
     left: 0;
     right: 0;
-
-    background: -webkit-linear-gradient(#22466F, #452525);
-    background: -o-linear-gradient(#22466F, #452525);
-    background: linear-gradient(#22466F, #452525);
+    /*background-color: #ebefd0;*/
+    /*background: -webkit-linear-gradient(#22466F, #452525);*/
+    /*background: -o-linear-gradient(#22466F, #452525);*/
+    /*background: linear-gradient(#22466F, #452525);*/
 }
 
 #chart {
@@ -60,7 +60,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    
+
     z-index: 200;
     display: none;
 }
