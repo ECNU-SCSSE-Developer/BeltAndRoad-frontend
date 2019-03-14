@@ -1,0 +1,602 @@
+body {background: #f6f6f6;
+}
+.panel{
+    margin-right: 25px;
+}
+.panel-body {
+    color: #444443;
+    font-size: 16px;
+    line-height: 2;
+}
+.panel-body .tit {
+    text-align: center;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 25px;
+    color: #00a0e9;
+}
+.panel-body .zhaiyao span {
+    font-weight: bolder;
+}
+.detailcon{
+    color: #444443;
+    font-size: 16px;
+    line-height: 2;
+    margin-top:40px;
+}
+.detailcon p {
+    color: #444443;
+    font-size: 16px;
+    line-height: 2;
+    text-indent: 2em;
+    margin-bottom: 15px;
+}
+
+.detailcon p strong {
+    margin-left: 32px;
+}
+.right-title
+{
+    color: #00a0e9;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.f16 {
+    margin-top:10px;
+    margin-bottom: 10px;
+    color: #95928C;
+    text-align: center;
+    font-size: 16px;
+}
+.gap{
+    float: left;
+    display: block;
+    width: 100%;
+    padding:15px;
+}
+.site-title {margin-top: 80px;margin-bottom: 20px; margin-left:45%; font-weight: 300;}
+/*.panel {
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+    background-color: #fff;
+    margin-bottom: 10px;
+}*/
+
+/*--------------------------------------
+ Sets the actionable area for the gaadiexp
+ including a label for usability
+--------------------------------------*/
+.content-box {margin-top:20px;}
+.gaadiexp,
+.gaadiexp:after,
+.gaadiexp *,
+.gaadiexp *:before,
+.gaadiexp *:after,
+.header-nav *,
+.header-nav *:before,
+.header-nav *:after {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.gaadiexp {
+    cursor: pointer;
+    height: 60px;
+    margin-bottom: 0;
+    width: 60px;
+    z-index: 9001;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    float:right;
+    top: 0;
+    background: #357fe7;
+}
+
+.gaadiexp:after {
+    bottom: 7px;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 300;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*--------------------------------------
+ Creates the look of the gaadiexp icon
+ using the inner span and pseudo-elements
+--------------------------------------*/
+
+.gaadiexp span,
+.gaadiexp span:before,
+.gaadiexp span:after {
+    background: #FFFFFF;
+    border-radius: 0.2em;
+    height: 4px;
+    left: 10px;
+    position: absolute;
+    top: 22px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 40px;
+}
+
+
+/* Reset the left and create the pseudo-element */
+
+.gaadiexp span:before,
+.gaadiexp span:after {
+    content: '';
+    left: 0;
+}
+
+
+/* Top bar position */
+
+.gaadiexp span:before {
+    top: -8px;
+}
+
+
+/* Bottom bar position */
+
+.gaadiexp span:after {
+    top: 8px;
+}
+
+
+/* Get rid of more on action (IE9 or higher) */
+
+.gaadiexp-check:checked + .gaadiexp:after {
+    content: '';
+}
+
+
+/* Get rid of the middle bar on action (IE9 or higher) */
+
+.gaadiexp-check:checked + .gaadiexp span {
+    height: 0;
+    width: 0;
+}
+
+
+/* Moves the top and bottom bars to the middle on action (IE9 or higher) */
+
+.gaadiexp-check:checked + .gaadiexp span:before,
+.gaadiexp-check:checked + .gaadiexp span:after {
+    top: 6px;
+}
+
+
+/* Rotates the top bar on action with full browser support (IE9 or higher) */
+
+.gaadiexp-check:checked + .gaadiexp span:before {
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+
+/* Rotates the bottom bar on action with full browser support (IE9 or higher) */
+
+.gaadiexp-check:checked + .gaadiexp span:after {
+    -webkit-transform: rotate(-225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(-225deg);
+}
+
+#mobile-nav:focus + .gaadiexp,
+.gaadiexp:focus,
+.gaadiexp:hover {
+    background: rgba(0, 136, 204, 0.9);
+}
+
+.gaadiexp-check:checked + .gaadiexp {
+    width: 200px;
+}
+
+.gaadiexp-check:checked + .gaadiexp:after {
+    bottom: 18px;
+
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+#mobile-nav {
+    left: -9999px;
+    position: fixed;
+    top: 0;
+}
+
+.header-nav ul li a:active,
+.header-nav ul li a:focus,
+.header-nav ul li a:hover,
+#mobile-nav:focus + .gaadiexp,
+.gaadiexp:focus,
+.gaadiexp:hover {
+    background: rgba(0, 0, 0, 0.1);
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
+.fixed-nav {
+    background: #357fe7;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 9000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.header-nav {
+    float: right;
+    height: 60px;
+    position: relative;
+    width: 100%;
+
+}
+
+.header-nav ul {
+    background: #fff;
+
+    height: calc(100vh - 60px);
+    list-style: none;
+    margin: 0;
+    overflow-y: auto;
+    padding: 10px 0 0 0;
+    position: absolute;
+    -webkit-transform: translateX(-110%);
+    transform: translateX(-110%);
+    -webkit-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    -moz-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    -o-transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    width: 200px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.075);
+    top: 100%;
+    z-index: 1;
+}
+
+.gaadiexp-check:checked ~ .header-nav ul {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.header-nav ul li {
+    float: right;
+    position: relative;
+    width: 100%;
+}
+
+.header-nav ul li a {
+    color: rgba(0, 0, 0, 0.79);
+    display: block;
+    float: right;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    line-height: 24px;
+    margin-left: 0;
+    overflow: hidden;
+    padding: 12px 60px 12px 12px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+/*.comments{
+    width:900px;
+    margin-left:30%;
+}*/
+
+
+
+
+
+
+
+
+/*初始化样式*/
+body,h1,h2,h3,h4,h5,ul,li,a,div,p,span,table,tr,td,img{margin: 0;padding: 0;}
+ul{padding: 0;margin: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{outline: none;border: 0;}
+body{font-family: "Microsoft Yahei";}
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after{content: " ";display: table;}
+.clearfix:after{clear: both;}
+.clearfix{zoom: 1;}
+/*浮动*/
+.pull-right{float: right !important;}
+.pull-left{float: left !important;}
+/*----------------------------------------------------------------------------------------------------------*/
+.content{float: left;}
+.flex-text-wrap,pre{margin: 0 !important;}
+.commentAll{width: 900px;padding: 20px;border: 1px solid #ededed;margin: 100px auto;}
+.plBtn{width: 75px;height: 36px;line-height: 36px;background-color: #3f92b0;text-align: center;display: block;float: right;color: #FFFFFF;font-size: 12px;border-radius: 6px;margin-right: 2px;margin-top: 20px;}
+.plBtn:hover{background-color: #3f92b0;}
+
+/*----------评论区域 begin----------*/
+.comment-show{margin-top: 20px;}
+.comment-show-con {
+    width: 100%;
+    border-top: 1px solid #EDEDED;
+    padding: 10px 0;
+}
+.comment-show-con-img {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.comment-show-con-list {
+    width: 85%;
+    margin-left: 3%;
+}
+.pl-text {
+    width: 100%;
+    margin-top: 7px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.date-dz {
+    width: 100%;
+    float: left;
+}
+.hf-list-con {
+    float: left;
+    width: 100%;
+    background-color: #eaeaec;
+    margin-top: 7px;
+}
+.comment-size-name {
+    font-size: 12px;
+    color: #339b53;
+}
+.my-pl-con {
+    font-size: 12px;
+    color: #8b8b8b;
+    width: 100%;
+}
+.date-dz-left {
+    font-size: 12px;
+    color: #8b8b8b;
+    display: block;
+    padding-top: 18px;
+}
+.comment-time, .comment-pl-block {
+    padding-top: 7px;
+}
+.comment-pl-block {
+    margin-top: 0;
+}
+.date-dz-right {
+    display: block;
+    padding-top: 6px;
+    padding-right: 18px;
+    position: relative;
+    overflow: hidden;
+}
+.removeBlock {
+    float: left;
+    font-size: 12px;
+    color: #8b8b8b;
+    margin-right: 24px;
+    display: block;
+    opacity: 0;
+}
+.hf-con-block {
+    display: block;
+}
+.date-dz-pl, .date-dz-line, .date-dz-z {
+    font-size: 12px;
+    color: #8b8b8b;
+}
+.date-dz-line {
+    display: block;
+    padding: 0 20px;
+}
+.date-dz-z-click-red {
+    width: 17px;
+    height: 17px;
+    display: block;
+    float: left;
+    background-image: url(../images/icon-all_01.png);
+    background-repeat: no-repeat;
+    background-position: -6px -198px;
+    margin-right: 5px;
+}
+.z-num {
+    font-style: normal;
+}
+.date-dz-z-click {
+    color: #b83b44;
+}
+.red {
+    background-position: -6px -119px !important;
+}
+.hf-pl {
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #339b53;
+    text-align: center;
+    display: block;
+    float: right;
+    color: #FFFFFF;
+    font-size: 12px;
+    border-radius: 6px;
+    margin-right: 2px;
+    margin-top: 20px;
+}
+.hf-con{width: 100%;margin-top: 24px;}
+.hf-input{font-size: 12px;}
+.all-pl-con {
+    width: 96%;
+    padding: 2% 0;
+    float: left;
+    margin: 0 2%;
+}
+.atName {
+    font-size: 12px;
+    color: #339b53;
+}
+.hfpl-text{margin-top: 0;}
+.date-dz:hover .removeBlock {
+    opacity: 1;
+}
+.hf-list-con .all-pl-con {
+    border-top: 1px solid #d9d9d9;
+    padding-bottom: 12px;
+}
+.hf-list-con .all-pl-con:first-child {
+    border-top: 0;
+}
+
+
+
+/*----------评论区域 end----------*/
+
+
+
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.flex-text-wrap {
+    width: 100%;
+    position: relative;
+    *zoom: 1;
+}
+textarea,
+.flex-text-wrap {
+    outline: 0;
+    margin: 0;
+    border: none;
+    padding: 0;
+    *padding-bottom: 0!important;
+}
+.flex-text-wrap textarea,
+.flex-text-wrap pre {
+    *white-space: pre;
+    *word-wrap: break-word;
+    white-space: pre-wrap;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.flex-text-wrap textarea {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    /* IE7 box-sizing fudge factor */
+    *height: 94%;
+    *width: 94%;
+}
+.flex-text-wrap pre {
+    display: block;
+    visibility: hidden;
+}
+.flex-text-wrap,
+textarea { margin-bottom: 25px }
+textarea,
+.flex-text-wrap pre {
+    line-height: 1.7;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    padding: 10px 15px;
+    border: 1px solid #c6c8ce;
+    width: 100%;
+    -webkit-appearance: none;
+    background: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 0 8px rgba(182, 195, 214, .6) inset, 0 1px 1px #fff;
+    -moz-box-shadow: 0 0 8px rgba(182, 195, 214, .6) inset, 0 1px 1px #fff;
+    box-shadow: 0 0 8px rgba(182, 195, 214, .6) inset, 0 1px 1px #fff;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    -ms-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transition-easing: ease-in-out;
+    -moz-transition-easing: ease-in-out;
+    -o-transition-easing: ease-in-out;
+    -ms-transition-easing: ease-in-out;
+    transition-easing: ease-in-out;
+    -webkit-transition-property: border-color, -webkit-box-shadow;
+    -webkit-transition-property: border-color, box-shadow;
+    -moz-transition-property: border-color, -moz-box-shadow;
+    -moz-transition-property: border-color, box-shadow;
+    -o-transition-property: border-color, box-shadow;
+    -ms-transition-property: border-color, box-shadow;
+    transition-property: border-color, box-shadow;
+}
+.fork-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 140px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.25), (min-resolution:120dpi) {
+    html {
+        background-size: 51px auto;
+    }
+}
+
+
+.ALLcontent{
+    box-shadow:0 0 1px rgba(182, 195, 214, .6) inset, 0 1px 1px #fff;
+    width:80%;
+    height:100%;
+    margin-left:10%;
+    background: white;
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

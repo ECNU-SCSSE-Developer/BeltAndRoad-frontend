@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>一带一路·看世界</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="./css/content.css" rel="stylesheet">
+    <!--<script>-->
+        <!--function getCollection() {  //点击收藏按钮，传title给你，返回该用户收藏夹名字-->
+            <!--var myurl = decodeURI(location.href);-->
+            <!--var tmp = myurl.split("?")[1];-->
+            <!--var title = tmp.split("=")[1];-->
+            <!--$.ajax({-->
+                <!--type: "post",-->
+                <!--url: "User_showFavorite",-->
+                <!--dataType: "json",-->
+                <!--data: {-->
+                    <!--eventName: title-->
+                <!--},-->
+                <!--success:function(data){//返回收藏夹名字-->
+                    <!--var col = eval(data);-->
+                    <!--var modal = $("#modalcol");-->
+
+                    <!--var html = "";-->
+                    <!--html+='<form class="form-horizontal">' +-->
+                        <!--'<fieldset>' +-->
+                        <!--' <div class="form-group">' +-->
+                        <!--'<label class="col-md-4 control-label" for="selectbasic">将文章收藏到：</label>' +-->
+                        <!--'<div class="col-md-4">' +-->
+                        <!--'<select id="selectbasic" name="selectbasic" class="form-control">'-->
+                    <!--for(var i=0 ;i< col.length ; i++) {-->
+                        <!--html += '<option >'+col[i].fileName+'</option>'-->
+                    <!--}-->
+                    <!--html +='</select>' +-->
+                        <!--'</div>' +-->
+                        <!--'</div>' +-->
+                        <!--'</fieldset>' +-->
+                        <!--'</form>';-->
+                    <!--modal.append(html);-->
+                <!--},-->
+                <!--error:function(){-->
+                    <!--alert("未知错误");-->
+                <!--}-->
+            <!--});-->
+
+        <!--}-->
+    <!--</script>-->
+
+    <!--&lt;!&ndash;收藏&ndash;&gt;-->
+    <!--<script>-->
+
+        <!--function getSure(){  //在模态框中选完收藏夹后点击确定，传收藏夹的名字给你-->
+            <!--var newl = $("#selectbasic").val();-->
+            <!--var myurl = decodeURI(location.href);-->
+            <!--var tmp = myurl.split("?")[1];-->
+            <!--var title = tmp.split("=")[1];-->
+            <!--//console.log(newl);-->
+            <!--$.ajax({-->
+                <!--type: "post",-->
+                <!--url: "User_addCollection",-->
+                <!--data: {-->
+                    <!--fileName: newl,-->
+                    <!--eventName:title-->
+                <!--},-->
+
+
+                <!--success: function (ans) {-->
+                    <!--if (ans == 1) {-->
+                        <!--alert("收藏成功！");-->
+                        <!--location.reload(true);//刷新页面-->
+
+
+                    <!--}-->
+                    <!--else-->
+                        <!--alert("数据库连接失败");-->
+                <!--},-->
+                <!--error: function () {-->
+                    <!--alert("未知错误");-->
+                <!--}-->
+
+
+            <!--});-->
+
+        <!--}-->
+
+    <!--</script>-->
+
+</head>
+<body>
+
+<input type="checkbox" name="mobile-nav" id="mobile-nav" class="gaadiexp-check" onchange="this.blur()">
+<label for="mobile-nav" class="gaadiexp white" tabindex="0"><span></span></label>
+<nav role="navigation" class="header-nav">
+    <div class="fixed-nav">
+        <div class="menu">
+            <ul>
+                <li class="page_item page-item-2">
+                    <a href="center.html" class="list-group-item"><i class="fa fa-user-circle-o fa-fw  fa-lg" aria-hidden="true"></i>个人中心</a>
+                </li>
+                <li class="page_item page-item-2">
+                    <a href="#" class="list-group-item "><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>返回首页</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="ALLcontent" >
+    <div class="main-content">
+
+        <div class="container">
+            <h3 class="site-title" id="title"></h3>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <p class="tit">学者称土耳其“中部走廊”应力争与我“一带一路”兼容</p>
+                                <p class="right-title"></p>
+                                <p class="source f16">2018-01-04 17:50 土耳其国际战略研究所</p>
+                                <p class="gap"></p>
+                                <!--<p id="content" style="text-align:left; line-hieght:100px;" >--><div class="zhaiyao"><span>摘要</span>：土耳其的“中部走廊”（Middle Corridor）计划和中国的“一带一路”计划作为两项设想跨大陆一体化的宏大计划而引人注目，不过两项计划的制定过程各自独立，缺乏兼容性考虑。土耳其可通过其“中部走廊”计划把本国多个港口投入丝绸之路经济带与海上丝绸之路的整合，从而实现与“一带一路”两翼的交汇。
+                                    土耳其的“中部走廊”（Middle Corridor）计划和中国的“一带一路”计划作为两项设想跨大陆一体化的宏大计划而引人注目，不过两项计划的制定过程各自独立，缺乏兼容性考虑。土耳其国际战略研究所亚太研究中心主任塞尔丘克·乔拉克卢奥近日撰文分析了两项计划的兼容性问题，指出土耳其可通过其“中部走廊”计划把本国多个港口投入丝绸之路经济带与海上丝绸之路的整合，从而实现与“一带一路”两翼的交汇。
+
+                                <!--</p>--></div>
+                                <div class="detailcon">
+                                <p     style="text-indent: inherit;"><strong>土“中部走廊”意在促进欧亚地区合作</strong></p>
+
+                                    <p>乔拉克卢奥在题为《土耳其“中部走廊”如何实现与中国“一带一路”兼容？》的文章中称，安卡拉最近提出名为“中部走廊”的新丝绸之路计划，该走廊东起中国境内，在穿越中国及哈萨克斯坦后抵达里海港口阿克套或土库曼斯坦的土库曼巴希港，然后再渡海抵达阿塞拜疆的阿拉特港，最后穿越外高加索地区到达土耳其和欧洲。该计划的主要目的是建立一个区域性繁荣地带、促进民间交流、强化地区自主意识、连结欧洲与亚洲（尤其是高加索地区、中亚、东亚和南亚）、实现东西走廊与南北走廊的互联互通、扩大市场和提升规模经济、为欧亚大陆区域合作的发展作出实质性贡献。
+
+                                    “中部走廊”计划有多项优势：作为北部走廊（俄罗斯线）和南部走廊（伊朗线）之外一条具有巨大市场潜力的补充线路，其长度将比北部走廊缩短大约2000公里，而且冬季气候条件更为宜人；它还将打通欧洲通往印度的南北走廊与通往中国的东西走廊之间的联系，并且通过阿克套/土库曼巴希—巴库/阿拉特—巴库—第比利斯—卡尔斯—马尔马雷线路获得通往西欧和北欧的捷径。
+
+                                    </p><p  style="text-indent: inherit;"><strong>土耳其担心遭“一带一路”冷落</strong></p>
+
+                                   <p>尽管“中部走廊”计划是土耳其自己的丝绸之路版本，但该计划实际上依托的是一个地区性铁路网的设想，其核心目标是把始发于土耳其境内的铁路线经外高加索（格鲁吉亚和阿塞拜疆）延长至中亚（哈萨克斯坦、土库曼斯坦等国）。而该计划的长期目标是建立从土耳其一直到达中国的直接的、畅通无阻的铁路线。
+
+                                    无独有偶，中国的丝绸之路经济带代表的是中国复兴古丝绸之路的雄心，其核心是通过建立一个横贯中亚的一体化铁路网络实现中国与中东和欧洲市场的直接连结。乔拉克卢奥在文中称，中国最初关于丝绸之路经济带的设想倾向于使用南部走廊（伊朗线）作为运输和物流联络线。如果真是这样，那么这意味着土耳其的“中部走廊”将被绕过。此外，对土耳其而言，还存在丝绸之路经济带取道两个黑海港口——格鲁吉亚的阿纳克利亚港和罗马尼亚的康斯坦萨港——而绕过土耳其的风险。作者称，因此土耳其应与中国协调以澄清各自的选择，并制订一个兼容“中部走廊”与丝绸之路经济带的一体化方案。
+
+                                    土耳其近年一直在开发丝绸之路与本国港口之间的连结，近期启动的国际滚装船航线多达16条。此外土耳其还有多项正在进行中的大型港口投资，其中有3个新开发的港口项目对于海上丝绸之路颇具战略意义，分别是地中海东部海岸的梅尔辛港、黑海西部海岸的菲利约斯港和爱琴海上的钱达尔勒港。这些港口的使用将能在很大程度上缩短海上丝绸之路的货运航程。不过到目前为止，中国的海上丝绸之路计划似乎并未把土耳其当作一个目的地，该计划初步的设想是货物经苏伊士运河后取道希腊的比雷埃夫斯港，之后再前往整个欧洲大陆。
+
+                                   </p><p  style="text-indent: inherit;"><strong>学者建议土耳其主动与“一带一路”接轨</strong></p>
+
+                                <p>乔拉克卢奥在文中指出，尚不清楚土耳其的“中部走廊”是否会被接纳入丝绸之路经济带，这种接纳的重要标志之一是中国积极参与土境内的埃迪尔内—卡尔斯高速铁路建设，因此目前土耳其迫切希望一个由中国企业领导的财团中标该高速铁路工程。
+
+                                另一方面，鉴于中国未将土耳其考虑为海上丝绸之路国家，安卡拉应该提出多项通过其“中部走廊”连结丝绸之路经济带与海上丝绸之路的替代方案，为此土耳其可投入至少3个港口：梅尔辛港可承担从丝绸之路经济带到北非诸国的货运；钱达尔勒港可用于把货物运至欧洲地中海国家；菲利约斯港及土耳其的其他黑海港口则可作为中国货物运往多瑙河流域国家的物流枢纽。乔拉克卢奥称，如果这些项目成为现实，土耳其将成为连结丝绸之路经济带和海上丝绸之路的枢纽，而土耳其与中国的合作对于“一带一路”区域一体化及全球整体贸易也将变得极其重要。 </p>
+                                </div>
+                                </div> </div>
+                    </div>
+                    <div class="extra" >
+                        <button class="date-dz-z pull-right" style="text-decoration :none;"  data-toggle="modal" data-target="#myModal"  onclick="getCollection()"  id="colbut">
+                            <i class="fa fa-star-o fa-fw fa-lg" aria-hidden="true"></i>收藏
+                        </button>
+                          </div>
+                </div>
+
+                <div class="col-md-1" ></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="commentAll">
+        <!--评论区域 begin-->
+        <div class="reviewArea clearfix">
+            <textarea class="content comment-input" placeholder="说点什么...&hellip;" onkeyup="keyUP(this)"></textarea>
+            <a href="javascript:;" class="plBtn" style=" text-decoration :none;">评论</a>
+        </div>
+        <!--评论区域 end-->
+
+
+        <!--回复区域 begin-->
+        <div class="comment-show" id="commentarea">
+
+        </div>
+        <!--回复区域 end-->
+    </div>
+
+</div>
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+
+            </div>
+            <div class="modal-body" id="modalcol">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary" onclick="getSure()">
+                    确定
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<!--<script src="./js/content.js"></script>-->
+
+
+<!--textarea高度自适应-->
+<script type="text/javascript">
+    $(function () {
+        $('.content').flexText();
+    });
+</script>
+<!--textarea限制字数-->
+<script type="text/javascript">
+    function keyUP(t){
+        var len = $(t).val().length;
+        if(len > 139){
+            $(t).val($(t).val().substring(0,140));
+        }
+    }
+</script>
+
+<!--点击评论创建评论-->
+<script type="text/javascript">
+    $('.commentAll').on('click','.plBtn',function(){  //传新创建的评论中内容和时间给你，时间从年直到秒，具体格式见下面的拼接
+        var myDate = new Date();
+        //获取当前年
+        var year=myDate.getFullYear();
+        //获取当前月
+        var month=myDate.getMonth()+1;
+        //获取当前日
+        var date=myDate.getDate();
+        var h=myDate.getHours();       //获取当前小时数(0-23)
+        var m=myDate.getMinutes();     //获取当前分钟数(0-59)
+        if(m<10) m = '0' + m;
+        var s=myDate.getSeconds();
+        if(s<10) s = '0' + s;
+        var now=year+'-'+month+"-"+date+" "+h+':'+m+":"+s;  //时间格式
+        //获取输入内容
+        var oSize = $(this).siblings('.flex-text-wrap').find('.comment-input').val();
+        console.log(oSize);
+        $.ajax({
+            type:"post",
+            url:"User_addComment",
+            data:{
+                commentTime :now,
+                content: oSize
+            },
+        });
+
+        //动态创建评论模块
+        oHtml = '<div class="comment-show-con clearfix"><div class="comment-show-con-list pull-left clearfix"><div class="pl-text clearfix"> <a href="#" class="comment-size-name" style="text-decoration: none;">David Beckham : </a> <span class="my-pl-con">&nbsp;'+ oSize +'</span> </div> <div class="date-dz"> <span class="date-dz-left pull-left comment-time">'+now+'</span> <div class="date-dz-right pull-right comment-pl-block"><a href="javascript:;" class="removeBlock" style=" text-decoration :none;">删除</a> <a href="javascript:;" class="date-dz-pl pl-hf hf-con-block pull-left" style=" text-decoration :none;">回复</a> </div> </div><div class="hf-list-con"></div></div> </div>';
+        if(oSize.replace(/(^\s*)|(\s*$)/g, "") != ''){
+            $(this).parents('.reviewArea ').siblings('.comment-show').prepend(oHtml);
+            $(this).siblings('.flex-text-wrap').find('.comment-input').prop('value','').siblings('pre').find('span').text('');
+        }
+    });
+</script>
+
+<!--点击回复-->
+<script type="text/javascript">
+    $('.comment-show').on('click','.pl-hf',function(){
+        //获取回复人的名字
+        var bfhName = $(this).parents('.date-dz-right').parents('.date-dz').siblings('.pl-text').find('.comment-size-name').html();
+        //回复@
+        var fhN = '回复@'+bfhName;
+        //var oInput = $(this).parents('.date-dz-right').parents('.date-dz').siblings('.hf-con');
+        var fhHtml = '<div class="hf-con pull-left"> <textarea class="content comment-input hf-input" placeholder="" onkeyup="keyUP(this)"></textarea> <a href="javascript:;" class="hf-pl" style=" text-decoration :none;">评论</a></div>';
+        // console.log(bfhName);
+
+        //显示回复
+        if($(this).is('.hf-con-block')){
+            $(this).parents('.date-dz-right').parents('.date-dz').append(fhHtml);
+            $(this).removeClass('hf-con-block');
+            $('.content').flexText();
+            $(this).parents('.date-dz-right').siblings('.hf-con').find('.pre').css('padding','6px 15px');
+            //console.log($(this).parents('.date-dz-right').siblings('.hf-con').find('.pre'))
+            //input框自动聚焦
+            $(this).parents('.date-dz-right').siblings('.hf-con').find('.hf-input').val('').focus().val(fhN);
+        }else {
+            $(this).addClass('hf-con-block');
+            $(this).parents('.date-dz-right').siblings('.hf-con').remove();
+        }
+    });
+</script>
+
+<!--回复块创建-->
+<script type="text/javascript">
+    $('.comment-show').on('click','.hf-pl',function(){  //传回复块中 ：被回复人，回复时间是回复内容给你
+
+        var oThis = $(this);
+        var myDate = new Date();
+        //获取当前年
+        var year=myDate.getFullYear();
+        //获取当前月
+        var month=myDate.getMonth()+1;
+        //获取当前日
+        var date=myDate.getDate();
+        var h=myDate.getHours();       //获取当前小时数(0-23)
+        var m=myDate.getMinutes();     //获取当前分钟数(0-59)
+        if(m<10) m = '0' + m;
+        var s=myDate.getSeconds();
+        if(s<10) s = '0' + s;
+        var now=year+'-'+month+"-"+date+" "+h+':'+m+":"+s;
+        //获取输入内容
+        var oHfVal = $(this).siblings('.flex-text-wrap').find('.hf-input').val();
+        console.log(oHfVal)
+        var oHfName = $(this).parents('.hf-con').parents('.date-dz').siblings('.pl-text').find('.comment-size-name').html();
+        var oAllVal = '回复@'+oHfName;
+        $.ajax({
+            type:"post",
+            url:"",
+            data:{
+                bfhName:oHfName,
+                commentTime: now,
+                content : oHfName
+
+            },
+        });
+        if(oHfVal.replace(/^ +| +$/g,'') == '' || oHfVal == oAllVal){
+
+        }else {
+            $.getJSON("../json/pl.json",function(data){
+                var oAt = '';
+                var oHf = '';
+                $.each(data,function(n,v){
+                    delete v.hfContent;
+                    delete v.atName;
+                    var arr;
+                    var ohfNameArr;
+                    if(oHfVal.indexOf("@") == -1){
+                        data['atName'] = '';
+                        data['hfContent'] = oHfVal;
+                    }else {
+                        arr = oHfVal.split(':');
+                        ohfNameArr = arr[0].split('@');
+                        data['hfContent'] = arr[1];
+                        data['atName'] = ohfNameArr[1];
+                    }
+
+                    if(data.atName == ''){
+                        oAt = data.hfContent;
+                    }else {
+                        oAt = '回复<a href="#" class="atName" style="text-decoration :none;">@'+data.atName+'</a> : '+data.hfContent;
+                    }
+                    oHf = data.hfName;
+                });
+
+                var oHtml = '<div class="all-pl-con"><div class="pl-text hfpl-text clearfix"><a href="#" class="comment-size-name">我的名字 : </a><span class="my-pl-con">'+oAt+'</span></div><div class="date-dz"> <span class="date-dz-left pull-left comment-time">'+now+'</span> <div class="date-dz-right pull-right comment-pl-block"> <a href="javascript:;" class="removeBlock" style=" text-decoration :none;">删除</a> <a href="javascript:;" class="date-dz-pl pl-hf hf-con-block pull-left" style=" text-decoration :none;">回复</a>  </div> </div></div>';
+                oThis.parents('.hf-con').parents('.comment-show-con-list').find('.hf-list-con').css('display','block').prepend(oHtml) && oThis.parents('.hf-con').siblings('.date-dz-right').find('.pl-hf').addClass('hf-con-block') && oThis.parents('.hf-con').remove();
+            });
+        }
+    });
+</script>
+<!--删除评论块-->
+<script type="text/javascript">
+    $('.commentAll').on('click','.removeBlock',function(){
+        var oT = $(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con');
+        if(oT.siblings('.all-pl-con').length >= 1){
+            oT.remove();
+        }else {
+            $(this).parents('.date-dz-right').parents('.date-dz').parents('.all-pl-con').parents('.hf-list-con').css('display','none')
+            oT.remove();
+        }
+        $(this).parents('.date-dz-right').parents('.date-dz').parents('.comment-show-con-list').parents('.comment-show-con').remove();
+
+    })
+</script>
+
+
+<!--文章收藏-->
+<script type="text/javascript">
+    $('.extra').on('click','.date-dz-z',function(){
+
+        $(this).is('.fa fa-star-o fa-fw fa-lg')
+        $(this).removeClass('fa fa-star-o fa-fw fa-lg red');
+        $(this).find('.fa fa-star-o fa-fw fa-lg').removeClass('red');
+
+    })
+</script>
+
+
+
+</body>
+</html>
