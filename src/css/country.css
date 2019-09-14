@@ -24,7 +24,82 @@ img.coun_intro_pic{
 
 }
 
+.des{
+    background-image: url('../img/util/border.png');
+    background-size: 100% 100%;
+    background-color: rgba(26, 222, 221, .6);
+    border-radius: 5px;
+    min-height: 400px;
+    box-sizing: border-box;
+    padding: 12px;
+    box-shadow: 3px 3px 80px rgb(0, 194, 184);
+    text-align: justify;
+}
 
+.des li{
+    color: #fff;
+}
+
+.des a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.nav-tabs a{
+    background-color: rgba(255, 255, 255, .3) !important;
+    text-decoration: none;
+    border: none;
+    color:#fff;
+}
+
+.nav-tabs{
+    border-bottom: 1px rgb(9, 251, 238) solid;
+}
+
+.nav-tabs li.active{
+    text-decoration: none;
+    border:none;
+}
+
+.nav-tabs li.active a{
+    background-color: rgba(9, 251, 238, .6);
+    color:#fff !important;
+    text-decoration: none;
+    border:1px rgb(9, 251, 238) solid !important;
+}
+
+.nav-tabs li a:hover{
+    background-color: rgba(9, 251, 238, .6);
+    color:#fff;
+    text-decoration: none;
+    border:none;
+}
+
+.nav-tabs li.active a:hover{
+    background-color: rgba(9, 251, 238, .6);
+    color:#fff;
+    text-decoration: none;
+    border:none;
+}
+
+.aperture{
+    width: 536px;
+    height: 538px;
+    background:none;
+    z-index: 1;
+    position: absolute;
+    border-radius: 50%;
+    left:6.35%;
+    top:24.5%;
+    box-shadow: 0 0 100px rgb(0, 194, 184);
+    animation: myfirst 2s infinite;
+}
+
+@keyframes myfirst{
+    0% {box-shadow: 0 0 40px rgb(0, 194, 184);}
+    50% {box-shadow: 0 0 100px rgb(0, 194, 184);}
+    100% {box-shadow: 0 0 40px rgb(0, 194, 184);}
+}
 
 .list-group {border-radius: 0;}
 .list-group .list-group-item {background-color: transparent;overflow: hidden;border: 0;border-radius: 0;padding: 0 16px;}

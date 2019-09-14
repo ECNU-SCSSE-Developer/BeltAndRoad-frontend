@@ -13,6 +13,7 @@ header {
   background-color: #69779b;
   margin-bottom: 0;
   z-index: 100;
+  opacity:0;
 }
 header h1 {
   margin: 5px 0 0 30px;

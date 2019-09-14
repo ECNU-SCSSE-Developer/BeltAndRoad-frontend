@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/monokai.css">
     <link rel="stylesheet" href="../css/twilight.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-
+    <link rel="stylesheet" href="css/country.css">
 
     <link rel="stylesheet" href="../css/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="../css/style.css"> <!-- Resource style -->
@@ -33,27 +33,28 @@
             position:relative;
             z-index: 999;
             padding-top: 10px;
-            padding-left: 10px;"
+            padding-left: 10px;
         }
         .intro li{
             line-height: 25px;
         }
     </style>
-<body style="background-image: url(../img/background1.jpg);background-size: 100% 100%;">
+<body style="background-image: url(./images/bg5.jpg);background-size: 100% 100%;">
 <header id="header">
-    <h1><a href="index.html">一带一路·看世界</a></h1>
-    <div id="toolbar">
-        <button><a href="http://www.yidaiyilu.gov.cn/info/iList.jsp?tm_id=513">数据展示</a></button>
-    </div>
-    <ul class="links">
-        <li>
-            <a href="" target="_blank">热点讨论</a>
-        </li>
-        <li><a href="" class="active" target="_blank">国际合作</a></li>
-        <li><a href="" target="_blank">最新抢看</a></li>
-    </ul>
+    <!--<h1><a href="index.html">一带一路·看世界</a></h1>-->
+    <!--<div id="toolbar">-->
+        <!--<button><a href="http://www.yidaiyilu.gov.cn/info/iList.jsp?tm_id=513">数据展示</a></button>-->
+    <!--</div>-->
+    <!--<ul class="links">-->
+        <!--<li>-->
+            <!--<a href="" target="_blank">热点讨论</a>-->
+        <!--</li>-->
+        <!--<li><a href="" class="active" target="_blank">国际合作</a></li>-->
+        <!--<li><a href="" target="_blank">最新抢看</a></li>-->
+    <!--</ul>-->
 </header>
-<main id="main">
+<div class="aperture"></div>
+<main id="main" style="z-index:999">
     <div id="chart"></div>
 </main>
 
@@ -68,8 +69,8 @@
 
 
 
-<section class="cd-horizontal-timeline">
-    <div class="timeline">
+<section class="cd-horizontal-timeline" >
+    <div class="timeline" style="z-index:999;">
         <div class="events-wrapper">
             <div class="events">
                 <ol id="content">
@@ -90,13 +91,13 @@
 
 </section>
 
-<div id="event">
-<div style="margin-left: 55%; margin-top: -100px; width: 38%;" id="countryevent">
+<div id="event" >
+<div class="des"  style="margin-left: 48%; margin-top: -10px; width: 45%;" id="countryevent">
 
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#China" aria-controls="home" role="tab" data-toggle="tab">China</a></li>
-        <li role="presentation"><a href="#Turkey" aria-controls="profile" role="tab" data-toggle="tab">Turkey</a></li>
+        <li role="presentation" class="active" style="z-index:999;"><a href="#China" aria-controls="home" role="tab" data-toggle="tab">China</a></li>
+        <li role="presentation" style="z-index:999;"><a href="#Turkey" aria-controls="profile" role="tab" data-toggle="tab">Turkey</a></li>
     </ul>
 
     <!-- Tab panes -->
@@ -173,7 +174,7 @@ mapParams.usa = {
 };
 myChart.setOption({
     title: {
-        text: 'OBOR',
+        <!--text: 'OBOR',-->
         x: 'center',
         textStyle: {
             color: 'white'
@@ -182,19 +183,14 @@ myChart.setOption({
     tooltip: {
         formatter: '{b}'
     },
-    legend: {
-        x: 'left',
-        data: ['placemarks'],
-        textStyle: {
-            color: 'white'
-        }
-    },
     series: [{
         name: 'Globe',
         type: 'map3d',
         mapType: 'world',
         baseLayer: {
-        	backgroundColor: '#9795cf'
+        //	backgroundColor: '#57c3c2'
+           backgroundColor:'#090D3A'
+          // backgroundColor:'rgb(0,0,255)'
         },
         data: [{
             name: 'China',
@@ -204,7 +200,8 @@ myChart.setOption({
         itemStyle:{
             normal:{
                 areaStyle:{
-                    color: '#64638f'
+                    //color: '#66a9c9'
+                    color:'rgb(0,0,255)'
                 }
             }
         },
@@ -220,6 +217,7 @@ myChart.setOption({
             focus: 'China',
             preserve: false
         },
+
         markPoint: {
             symbol: 'image://./asset/star.png',
             symbolSize: 2,
@@ -249,7 +247,169 @@ myChart.setOption({
                 name: '事件总数：76',
                 geoCoord: [78.042155, 27.175015]
             }]
-        }
+        },
+          markLine:{
+          itemStyle:
+          {
+          normal:{
+          lineStyle:{
+          //width:1,
+          type:'solid',
+        color: 'black'
+                  }
+               }
+          },
+            effect: {
+               show: true,
+                trailLength: 0.9,
+                trailWidth:0.8
+
+            },
+            blendMode:'lighter',
+            data: [
+                [
+                  { geoCoord: [116.20,39.56]},//中国北京
+                  {geoCoord: [50,44]}//哈萨克斯坦
+                ],
+                [
+                    {geoCoord: [50,44]},//哈萨克斯坦
+                { geoCoord: [69.16,41.18]}//乌兹别克斯坦
+                ],
+                [
+                 { geoCoord: [69.16,41.18]},//乌兹别克斯坦
+                 { geoCoord: [51,35]}//伊朗
+                ],
+                [
+                  { geoCoord: [51,35]},//伊朗
+                 { geoCoord: [43.5,38.8]}//土耳其
+                ],
+                [
+                    { geoCoord: [43.5,38.8]},//土耳其
+                     { geoCoord: [100,60]}//俄罗斯
+                ],
+                [
+                    { geoCoord: [100,60]},//俄罗斯
+                      { geoCoord: [5,50]}//荷兰
+                ],
+                [
+                    { geoCoord: [5,50]},//荷兰
+                   { geoCoord: [23.43,37.58]}//希腊
+                ],
+                [
+                     { geoCoord: [23.43,37.58]},//希腊
+                { geoCoord: [35,5]}//肯尼亚
+                ],
+                [
+                    { geoCoord: [35,5]},//肯尼亚
+                   { geoCoord: [80,8]}//斯里兰卡
+                ],
+                [
+                    { geoCoord: [80,8]},//斯里兰卡
+                    { geoCoord: [80,30]}//印度
+                ],
+                [
+                     { geoCoord: [80,30]},//印度
+                      { geoCoord: [120,3]}//印尼
+                ],
+
+                //double
+                [
+                  { geoCoord: [116.20,39.56]},//中国北京
+                  {geoCoord: [50,44]}//哈萨克斯坦
+                ],
+                [
+                    {geoCoord: [50,44]},//哈萨克斯坦
+                { geoCoord: [69.16,41.18]}//乌兹别克斯坦
+                ],
+                [
+                 { geoCoord: [69.16,41.18]},//乌兹别克斯坦
+                 { geoCoord: [51,35]}//伊朗
+                ],
+                [
+                  { geoCoord: [51,35]},//伊朗
+                 { geoCoord: [43.5,38.8]}//土耳其
+                ],
+                [
+                    { geoCoord: [43.5,38.8]},//土耳其
+                     { geoCoord: [100,60]}//俄罗斯
+                ],
+                [
+                    { geoCoord: [100,60]},//俄罗斯
+                      { geoCoord: [5,50]}//荷兰
+                ],
+                [
+                    { geoCoord: [5,50]},//荷兰
+                   { geoCoord: [23.43,37.58]}//希腊
+                ],
+                [
+                     { geoCoord: [23.43,37.58]},//希腊
+                { geoCoord: [35,5]}//肯尼亚
+                ],
+                [
+                    { geoCoord: [35,5]},//肯尼亚
+                   { geoCoord: [80,8]}//斯里兰卡
+                ],
+                [
+                    { geoCoord: [80,8]},//斯里兰卡
+                    { geoCoord: [80,30]}//印度
+                ],
+                [
+                     { geoCoord: [80,30]},//印度
+                      { geoCoord: [120,3]}//印尼
+                ],
+
+                //triple
+
+                [
+                  { geoCoord: [116.20,39.56]},//中国北京
+                  {geoCoord: [50,44]}//哈萨克斯坦
+                ],
+                [
+                    {geoCoord: [50,44]},//哈萨克斯坦
+                { geoCoord: [69.16,41.18]}//乌兹别克斯坦
+                ],
+                [
+                 { geoCoord: [69.16,41.18]},//乌兹别克斯坦
+                 { geoCoord: [51,35]}//伊朗
+                ],
+                [
+                  { geoCoord: [51,35]},//伊朗
+                 { geoCoord: [43.5,38.8]}//土耳其
+                ],
+                [
+                    { geoCoord: [43.5,38.8]},//土耳其
+                     { geoCoord: [100,60]}//俄罗斯
+                ],
+                [
+                    { geoCoord: [100,60]},//俄罗斯
+                      { geoCoord: [5,50]}//荷兰
+                ],
+                [
+                    { geoCoord: [5,50]},//荷兰
+                   { geoCoord: [23.43,37.58]}//希腊
+                ],
+                [
+                     { geoCoord: [23.43,37.58]},//希腊
+                { geoCoord: [35,5]}//肯尼亚
+                ],
+                [
+                    { geoCoord: [35,5]},//肯尼亚
+                   { geoCoord: [80,8]}//斯里兰卡
+                ],
+                [
+                    { geoCoord: [80,8]},//斯里兰卡
+                    { geoCoord: [80,30]}//印度
+                ],
+                [
+                     { geoCoord: [80,30]},//印度
+                      { geoCoord: [120,3]}//印尼
+                ]
+
+
+
+            ]
+           // data:loadLine()
+         }
     }],
 });
 myChart.on(ecConfig.EVENT.CLICK, function (param) {
@@ -325,6 +485,16 @@ function countrybling(countryname){
          <!--}]-->
     });
 }
+
+<!--function lineBuild(){-->
+<!--myChart1.setOption({-->
+     <!--series:loadLine()-->
+     <!--});-->
+<!--}-->
+
+
+
+
 </script>
 
 <script src="../lib/esl.js"></script>
@@ -341,8 +511,63 @@ function countrybling(countryname){
 
     $(document).ready(function(){
         getDate();
+        //lineBuild();
 
     });
+//    function loadLine()
+//    {
+//        var line={
+//            "geo":[{ geoCoord: [116.20,39.56]},//中国北京
+//                {geoCoord: [50,44]},//哈萨克斯坦
+//                { geoCoord: [69.16,41.18]},//乌兹别克斯坦
+//                { geoCoord: [51,35]},//伊朗
+//                { geoCoord: [43.5,38.8]},//土耳其
+//                { geoCoord: [100,60]},//俄罗斯
+//                { geoCoord: [5,50]},//荷兰
+//                { geoCoord: [23.43,37.58]},//希腊
+//                { geoCoord: [35,5]},//肯尼亚
+//                { geoCoord: [80,8]},//斯里兰卡
+//                { geoCoord: [80,30]},//印度
+//                { geoCoord: [120,3]}//印尼
+//            ]};
+//        var data=[];
+//        for(var i=0;i<line.geo.length;i++)
+//        {
+//            var tmp=[];
+//            var source={ geoCoord:[] };
+//            var destination={geoCoord:[] };
+//
+//            source.geoCoord = line.geo[i].geoCoord;
+//            destination.geoCoord=line.geo[i+1].geoCoord;
+//
+//
+//            tmp.push(source);
+//            tmp.push(destination);
+//            data.push(tmp);
+//
+//
+//        }
+//        var series=[{
+//            markLine:{
+//                lineStyle:{
+//                    width:1,
+//                    color:'blue'
+//                },
+//                effect:{
+//                    show:true,
+//                    trailLength:0.9,
+//                    trailWidth:0.8
+//                },
+//                blendMode:'lighter',
+//                data:data
+//            }
+//        }];
+//
+//        return series;
+//
+//    }
+
+
 
     function getDate(){
         var eventdate={
@@ -518,7 +743,7 @@ function countrybling(countryname){
         var html="";
 
         //国家导航栏
-        html += '<div style="margin-left: 55%; margin-top: -100px; width: 38%;" id="countryevent">\n' +
+        html += '<div class="des" style="margin-left: 48%; margin-top: -10px; width: 45%;" id="countryevent">\n' +
             '    <ul class="nav nav-tabs" role="tablist">';
         for(var i=0;i<size;++i){
             if(i==0){
